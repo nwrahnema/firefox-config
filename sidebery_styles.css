@@ -1,0 +1,26 @@
+.root{
+  background-image: none;
+}
+
+.Sidebar{
+  --bg-img: none;
+  --container-fg: #e8e0ff;
+  --nav-btn-activated-bg: #3c1f7b;
+}
+
+.Sidebar:not(:hover) .Tab {
+  padding-left: 0;
+}
+
+/* -------------- Tree: hide expand icon */
+.Tab:not(:hover) .exp > svg {
+	opacity: 0;
+}
+/* -------------- Tree: move group counts to left of favicon */
+.Tab:not(:hover) .fav > .child-count {
+	opacity: 0;
+}
+/* ---------------- Set group parent favicons to full opacity when not hovered */
+.Tab:not(:hover) .lvl-wrapper > .fav > img {
+	opacity: 1;
+}
